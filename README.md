@@ -1,46 +1,43 @@
-# Astro Starter Kit: Basics
+# Astro Starter
 
-```sh
-pnpm create astro@latest -- --template basics
+Content-driven Astro site with Biome for formatting and linting.
+
+## Project Structure
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
 ├── public/
 │   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   └── pages/
+├── .vscode/
+│   ├── settings.json    # Biome as default formatter, format on save
+│   └── extensions.json  # Recommends Biome extension
+├── biome.json           # Linting, formatting, a11y rules
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Commands
 
-## 🧞 Commands
+| Command         | Action                                      |
+| :-------------- | :------------------------------------------ |
+| `pnpm install`  | Install dependencies                        |
+| `pnpm dev`      | Start dev server at `localhost:4321`        |
+| `pnpm build`    | Build to `./dist/`                          |
+| `pnpm preview`  | Preview production build                    |
+| `pnpm lint`     | Run Biome check                             |
+| `pnpm lint:fix` | Run Biome check and apply fixes             |
+| `pnpm format`   | Format files with Biome                     |
 
-All commands are run from the root of the project, from a terminal:
+## Setup
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+1. `pnpm install`
+2. Install the [Biome extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome) when prompted (or from Extensions)
+3. `pnpm dev`
 
-## 👀 Want to learn more?
+## Learn More
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[Astro docs](https://docs.astro.build) · [Biome docs](https://biomejs.dev)
